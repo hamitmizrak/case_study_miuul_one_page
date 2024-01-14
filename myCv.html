@@ -73,7 +73,7 @@
         id="section_my_cv_id"
         class="bg-white p-7 w-96 rounded shadow-md"
       >
-        <form action="#" id="my_cv_form_id" method="get">
+        <form action="#" id="my_cv_form_id" method="get" onsubmit="return validateMiuulMyCv()">
           <fieldset>
             <legend class="mb-8 font-semibold text-center text-black">
               My CV
@@ -151,10 +151,10 @@
                 for="my_cv_phone_id"
                 >Gender:</label
               >
-              <input type="radio" name="gender"  class="w-4 h-4"  checked />
+              <input type="radio" name="gender" id="female"  class="w-4 h-4"  checked />
               <span class="text-black">:Bayan</span>
-              <input type="radio" class="w-4 h-4" name="gender" />
-              
+
+              <input type="radio" class="w-4 h-4" id="male" name="gender" />
               <span class="text-black">:Bay</span>
             </div>
 

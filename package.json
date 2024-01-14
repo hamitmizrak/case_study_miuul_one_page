@@ -1,0 +1,16 @@
+{
+  "name": "miuul-case-study-one-page",
+  "version": "1.0.0",
+  "description": "[GitHub](https://github.com/hamitmizrak/case_study_miuul_one_page)",
+  "main": "miuul.js",
+  "scripts": {
+    "nodemon": "nodemon miuul.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

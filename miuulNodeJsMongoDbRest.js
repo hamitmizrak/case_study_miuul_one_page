@@ -26,7 +26,7 @@ app.use(bodyParser.json());
 // app.get("/onepage", (request, response) => {
 //   response.send("Get Router Node JS + Mongo+ Rest Api(One Page)");
 // });
-// Module Import
+// Module Import (API)
 const apiModule = require("./rest/Api.js")
 app.use("/api",apiModule)
 

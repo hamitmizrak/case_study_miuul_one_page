@@ -1,0 +1,14 @@
+// GET 
+METHOD: GET 
+URL   : http://localhost:3434/api/miuul
+
+////////////////////////////////////////
+
+// POST 
+METHOD: POST 
+URL   : http://localhost:3434/api/miuul
+{
+    "title":"Miuul Title",
+    "description":"Miuul Description",
+    "counter":3434
+}

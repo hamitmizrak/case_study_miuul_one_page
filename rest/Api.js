@@ -64,6 +64,7 @@ router.get("/miuul/:miuulID", async (request, response) => {
   //response.setHeader("Content-Type", "application/json")
   console.log(request.body);
   try {
+    // find
     const find = await Database.findById(request.params.miuulID);
     response.json(find);
   } catch (err) {
@@ -74,7 +75,7 @@ router.get("/miuul/:miuulID", async (request, response) => {
 // UPDATE patch: Bir kısmını güncelle
 // http://localhost:3434/api/miuul/65a956ae64fbfb2339da65b0
 //router.patch("/miuul/:miuulID", async (request, response) => {
-router.patch("/miuul/:miuulID", async (request, response) => {
+router.patch("/miuul/patch/:miuulID", async (request, response) => {
   //response.setHeader("Content-Type", "application/json")
   console.log(request.body);
   try {
@@ -90,21 +91,15 @@ router.patch("/miuul/:miuulID", async (request, response) => {
   }
 }); //end UPDATE (Veri Güncelle)
 
-// UPDATE
+// UPDATE VEYA PATCH YAPABİLİRSİN
 // http://localhost:3434/api/miuul/65a956ae64fbfb2339da65b0
 //router.patch("/miuul/:miuulID", async (request, response) => {
 router.put("/miuul/:miuulID", async (request, response) => {
   //response.setHeader("Content-Type", "application/json")
   console.log(request.body);
   try {
-    const update = await Database.updateOne(
-      { _id: request.params.miuulID },
-      {
-        $set: { title: request.body.title },
-        $set: { description: request.body.description },
-        $set: { counter: request.body.counter },
-      }
-    ); //end updateOne
+    const update = await Database.findByIdAndUpdate( { _id: request.params.miuulID }, request.body);
+    update.save()
     response.json(update);
   } catch (err) {
     response.json({ message: err });

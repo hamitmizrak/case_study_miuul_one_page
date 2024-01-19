@@ -12,6 +12,7 @@ const miuulOnePageNodeJsMongoDbSchema = mongoose.Schema({
     trim: true,
     minlength: 3,
     maxlength: 50,
+    lowercase: true,
   },
   description: {
     type: String,
@@ -19,6 +20,7 @@ const miuulOnePageNodeJsMongoDbSchema = mongoose.Schema({
     trim: true,
     minlength: 3,
     maxlength: 50,
+    lowercase: true,
   },
   counter: {
     type: Number,

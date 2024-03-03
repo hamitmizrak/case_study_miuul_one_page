@@ -1,9 +1,9 @@
 // Date
-const miuulNewDate = () => {
-  const miuulDate = document.getElementById("miuul_date_id");
-  miuulDate.innerHTML = new Date().getTime();
+const newDate = () => {
+  const date = document.getElementById("date_id");
+  date.innerHTML = new Date().getTime();
 };
-miuulNewDate();
+newDate();
 
 // validation
 const validateMiuulMyCv = () => {

@@ -2,10 +2,10 @@
   "name": "miuul-case-study-one-page",
   "version": "1.0.0",
   "description": "[GitHub](https://github.com/hamitmizrak/case_study_miuul_one_page)",
-  "main": "miuul.js",
+  "main": "tutorials.js",
   "scripts": {
-    "start": "nodemon miuulNodeJsMongoDbRest.js",
-    "nodemon": "nodemon miuul.js",
+    "start": "nodemon nodeJsMongoDbRest.js",
+    "nodemon": "nodemon tutorials.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
